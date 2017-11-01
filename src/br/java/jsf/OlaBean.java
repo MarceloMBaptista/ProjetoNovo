@@ -4,6 +4,7 @@ import java.io.Serializable;
 
 import javax.faces.bean.ManagedBean;
 import javax.faces.bean.SessionScoped;
+import javax.faces.event.ActionEvent;
 
 @ManagedBean
 @SessionScoped
@@ -24,5 +25,13 @@ public class OlaBean implements Serializable {
 		this.nome = nome;
 	}
 	
-
+	public void algumaAcao(){
+		
+		nome="";
+	}
+	
+	public void metodoListener(ActionEvent e ){
+		
+		
+	}
 }

@@ -15,6 +15,12 @@ xmlns:h="http://java.sun.com/jsf/html">
 <h:form>
 <h:inputText value ="#{olaBean.nome}"></h:inputText>
 <h:commandButton value ="#{olaBean.nome}" action ="bemvindo"></h:commandButton>
+
+<h:commandButton  action ="#{olaBean.algumaAcao}" 
+value ="Limpar" actionListener="#{olaBean.metodoListener}">
+</h:commandButton>
+
+
 </h:form>
 </h:body>
 </html>
